@@ -1,0 +1,70 @@
+<!-- Adding CSS to HTML -->
+<!-- 
+    INLINE: <element style="CSS"> 
+    INTERNAL: <head> <style>css</style> </head>
+    EXTERNAL: <link href="style.css" rel="stylesheet"/>
+
+    property: value (specify property, after colon specify value you want to change that property to.)
+-->
+
+<!-- Inline css styling (TARGET SINGLE ELEMENT): 
+
+<html style="background: blue">
+</html>
+
+- Style can be added to all tags, not just HTML
+- background is the property, blue is the value
+- Attritbute format: name="value entered here"
+-->
+
+<!-- Internal css styling (TARGET SINGLE WEBPAGE): 
+<html>
+    <head>
+        <style>
+            html{
+                background: red;
+            }
+        </style>
+    </head>
+</html>
+
+- SHOULDN'T BE USED FOR MULTIPAGE STYLING! Can only apply to anywhere within the SPECIFIC document.
+-->
+
+<!-- External css styling (TARGET ENTIRE WEBSITE):
+- Style specification is created outside of the document, and is called on in the main doc.
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="./styles.css"
+        />
+    </head>
+</html>
+
+- "rel" gives the relationship
+- "href" give the location
+
+styles.css
+html{
+    background: green;
+}
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Three Methods of Adding CSS</title>
+</head>
+
+<body>
+  <h1>Three Methods of Adding CSS</h1>
+  <!-- Create 3 Links to The 3 Webpages: inline, internal and external -->
+  <a href="./inline.html">Inline</a>
+  <a href="./internal.html">Internal</a>
+  <a href="./external.html">External</a>
+</body>
+
+</html>
