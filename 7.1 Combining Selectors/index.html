@@ -1,0 +1,89 @@
+<!-- COMBINING CSS Selectors -->
+<!-- 
+  COMBINE = You can combine different selectors in order to select something specific. 
+  
+  Format: 
+  selector, selector {
+    color: blueviolet;
+  }
+  
+  EX:
+
+  <p>Yellow Text</p>
+  <div class="box inner-box">
+    <p>White Text</p>
+  </div>
+
+  p {
+    color: yellow;
+  }
+  .inner-box, p {
+    color: white;
+  }
+  - In this example we took inner-box and p and combined them 
+  into a specific class to change only the specified element.
+ -->
+
+ <!-- CHILD = Apply to DIRECT child of left side! Can't be ancestor farther than 1 level.
+
+Format: Parent > Child (This selects the child element)
+
+selector > selector {
+  color: firebrick;
+}
+-->
+
+<!-- DECENDANT = Apply to a decendent of left side anywhere within it's realm
+
+Format: ancestor space decendant 
+selector selector {
+  color: blue;
+}
+-->
+
+<!-- CHAINING = Apply where ALL selectors are true
+
+Format: selectorselector (No space)
+
+selectorselector {
+  color: seagreen;
+}
+
+-->
+
+<!-- COMBINING COMBINERS = ancestor chaining 
+selector selectorselector {
+  font-size: 2rem;
+}
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Combining CSS Selectors</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<!-- Don't change any of the HTML code! -->
+
+<body>
+  <h1>To Do List</h1>
+  <h2>Monday</h2>
+  <div class="box">
+    <p class="done">Do these things today!</p>
+    <ul class="list">
+      <li>Wash Clothes</li>
+      <li class="done">Read</li>
+      <li class="done">Maths Questions</li>
+    </ul>
+  </div>
+
+  <ul>
+    <p class="done">Other items</p>
+  </ul>
+  <p>The best preparation for tomorrow is doing your best today.</p>
+
+</body>
+
+</html>

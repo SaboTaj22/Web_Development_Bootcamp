@@ -1,0 +1,26 @@
+/* Write your code here: */
+/* Combined---h1 and h2 elements to make them the same color */
+h1, h2{
+    color: blueviolet;
+}
+
+/* Child---Found direct decendent of .box that was a p element */
+.box > p {
+    color: firebrick;
+}
+
+/* Decendant---Found ancestor of .box and colored it blue */
+.box li {
+    color: blue;
+  }
+
+/* Chaining---Specifically target "Read" and "Maths Questions" and change color to green*/
+
+li.done {
+  color: seagreen;
+}
+
+/* Combining Combiners---Change "Other Items" font size to 0.5rem */
+ul p.done {
+    font-size: 0.5rem;
+  }

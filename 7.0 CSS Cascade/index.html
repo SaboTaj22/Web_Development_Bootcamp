@@ -1,0 +1,41 @@
+<!-- Cascading Style Sheets -->
+<!-- 
+  Applies internal and external css styles to an element.
+  EX: Color of an item in a list is different from the color of other items
+  - All items were changed to green but at the last minute one of them is turned to red.
+ -->
+
+<!-- Specificity and Inheritance:
+4) Position: the lowest element is the most important
+3) Specifity: Least -> most specific (element: li{}, class: .first-class, attribute: li[draggable], id #first-id)
+2) Type: Least -> most (external: link element linking to a file, internal: in between style element, 
+1) Inline: applied through attribute inside opening tag EX <h1 style=" ">)
+Importance: keyword added to a property EX: color: green !important;
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Cascade</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="outer-box" class="box">
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p class="white-text">White Text</p>
+      </div>
+    </div>
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p class="white-text">White Text</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
