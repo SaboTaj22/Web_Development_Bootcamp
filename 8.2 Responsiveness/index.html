@@ -1,0 +1,103 @@
+<!-- Responsiveness -->
+<!-- A website is responsive if it can adjust itself according to the 
+  screen size it is being displayed on! -->
+
+<!-- Designing Websites to Be Responsive -->
+<!-- 
+  
+  Media Queries:
+
+@media (max-width: 600px) {
+  /* Look inside these braces for CSS screens below or equal to 600px wide */
+}
+
+  CSS Grid:
+
+- Pick a grid design
+- Create a div with the proper amount of divs to match your chosen grid
+
+<div> class="grid-container"
+  <div class="first card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+</div> 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; (# of columns. fr means equal fractions)
+  grid-template-rows: 100px 200px 200px (# of rows and their height specifications)
+  gap: 30px; (gap in between )
+}
+
+.first {
+  grid-column: span 2; (First columns spans 2 columns)
+}
+
+.card {
+  background-color: blue;
+}
+
+
+  CSS Flexbox:
+
+  Creates 1-d layouts on horizontal or verticle
+
+- Create div container
+- Create parent container using flex
+
+
+<div> class="grid-container"
+  <div class="first card"></div>
+  <div class="second card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+</div> 
+
+  .flex-container {
+    display: flex;
+  }
+
+  .card{
+    background: blue;
+    border: 30px solid white;
+    height: 100px;
+    flex: 1; (Sets all to have equal width distribution)
+  }
+  .first { (Customizes the first box)
+    flex:2; 
+  }
+  .second{
+    flex: 0.5; (Customizes the second box)
+  }
+
+
+  External Frameworks e.g. Bootstrap (Frameworks are external)
+- Fill up boxes within a div container see bootstrap.html
+
+*ALL STYLES HAVE DIFFERENT PURPOSES!*
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsiveness</title>
+  <style>
+    a {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Responsiveness Methods</h1>
+  <a href="./media-query.html">1. Media Queries</a>
+  <a href="./grid.html">2. CSS Grid</a>
+  <a href="./flexbox.html">3. CSS Flexbox</a>
+  <a href="./bootstrap.html">4. Bootstrap Framework</a>
+</body>
+
+</html>

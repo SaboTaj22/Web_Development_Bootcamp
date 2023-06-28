@@ -1,0 +1,81 @@
+<!-- Media Queries -->
+<!-- 
+  div{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+  }
+  @media (max-width: 600px) { (SCALES element according to size of screen)
+    div{
+      height: 100px;
+      width: 100px;
+    }
+  }
+ -->
+ <!-- 
+  min-width targets bigger screens (small to big) GREATER THAN specified value
+  max-width targets smaller screens (big to small) LESS THAN specified value
+ -->
+
+ <!-- Combine media queries
+  @media (min-width: 600px) and (max-width: 900px)
+  body{
+    /* Styles for screens between 600px and 900px */
+  }
+  -->
+
+  <!-- Device ***Don't have to write "screen" in code. Just there for an example!***
+  @media screen(orientation: landscape){ (Media query targets only when website is printed. Screen basically mean print, recommended not to use it)
+    /* Styles for landscape orientation*/
+  }
+  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+TODO: Change the background color for each device
+[lightsalmon] Mobile Devices: 319px — 480px
+[powderblue] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Media Query</title>
+  <style>
+    body {
+      background-color: aquamarine;
+    }
+  @media (min-width: 319px) and (max-width: 480px) {
+    body {
+      background-color: lightsalmon;
+    }
+  }  
+  @media (min-width: 481px) and (max-width: 1200px) {
+    body {
+      background-color: powderblue;
+    }
+  }
+  @media (min-width: 1201px) and (max-width: 1600px) {
+    body {
+      background-color: limegreen;
+    }
+  }
+  @media (min-width: 1601px) {
+    body{
+      background-color: seagreen;
+    }
+  }
+  
+  </style>
+</head>
+
+<body>
+</body>
+
+</html>
