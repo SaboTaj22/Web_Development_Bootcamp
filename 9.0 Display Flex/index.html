@@ -1,0 +1,84 @@
+<!-- Display Flex -->
+<!-- Floats: Great for magazine-style layouts -->
+<!-- Flexbox: Overall Page Structure-->
+
+<!-- How to use flexbox:
+  1) Wrap divs inside container 
+<div class="container"> 
+  <div class="one"><p>...</p></div>
+  <div class="two"><p>...</p></div>
+  <div class="three"><p>...</p></div>
+</div>
+
+  2) Target container in CSS
+
+.container {
+  display: flex;
+  gap: 10px;
+}
+ -->
+
+ <!-- Table Element -->
+ <!-- set up table, table rows, table data
+<table>
+  <tr class = "row">
+    <td class ="col1"></td>
+    <td class ="col2"></td>
+    <td class ="col3"></td>
+  </tr>
+
+STYLE.CSS (Set up style of columns)
+  .col1 {
+    width: 25%
+  }
+  .col2 {
+    width: 25%
+  }
+  .col3 {
+    width: 25%
+  }
+  
+</table>
+  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Column Layout Methods</title>
+  <style>
+    p {
+      padding: 0;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .container {
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+      background-color: gold;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <p>Page Layout Methods</p>
+
+    <li><a href="./html-table.html">HTML Table</a></li>
+    <li><a href="./inline-block.html">Inline-Block</li>
+    <li><a href="./absolute-position.html">Absolute Positioning</li>
+    <li><a href="./float.html">Float</li>
+    <li><a href="./flex.html">Flexbox</li>
+
+  </div>
+</body>
+
+</html>
