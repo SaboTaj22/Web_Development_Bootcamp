@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    /* MY SOLUTION STEPS */
+    /* 
+    1) Define all the items needed in HTML
+    2) Set the parameters for the items according to the specifications given
+    3) Style each item according to the specifications
+    4) Make final adjustments (In this case, it was centering piece)
+    */
+
+    /* Centered the piece to the middle of the screen */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Set the parameters for the piece */
+    .container{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      background-color: black;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+    }
+
+    .box{
+      background-color: #F0F1EC;
+    }
+    
+    .red{
+      background-color: #E72F24;
+    }
+
+    .blue{
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+
+    .yellow{
+      background-color: #F9D01E;
+    }
+
+    .black{
+      background-color: #232629;
+    }
+
+    .w1{
+      grid-column: span 3;
+    }
+    
+    .w2{
+      grid-row: span 2;
+    }
+
+    .w3{
+      grid-area: 2 / 2 / 4 / 4;
+    }
+
+    .w4{
+      grid-row: span 2;
+    }
+  </style>
+</head>
+
+<!-- I put each item used into a container box class based on characteristic -->
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="box red"></div>
+    <div class="box w1"></div>
+    <div class="box w2"></div>
+    <div class="box w3"></div>
+
+    <div class="box blue"></div>
+    <div class="box w4"></div>
+
+    <div class="box w5"></div>
+    <div class="box yellow"></div>
+    <div class="box black"></div>
+  </div>
+</body>
+
+</html>

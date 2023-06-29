@@ -1,0 +1,131 @@
+<!-- Grid -->
+<!-- 
+  - Grid is good for 2d vs Flexbox which is only good for 1d (straight line)
+  - Can have Grid and Flexbox working together in one format
+ -->
+<!-- Using Grid:
+
+1) Create a div class container.
+
+<div class="container">
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+</div>
+
+2) Target container
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr (column 1 is 100px wide column 2 is 200px wide)
+  grid-template-rows: 1fr 1fr (The length of the columns are both equal)
+  gap: 10px; (There is a 10 px gap between the boxes)
+}
+
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chessboard</title>
+  <style>
+    /* Write your code here */
+    /* Each square should be 100px by 100px */
+    /* My colours for white: #f0d9b5, black: #b58863 */
+    /* Have to add width because chessboard is trying to be responsive and will seperate when expanded.*/
+    /* Width makes it compact */
+    .container{
+      width: 800px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .white{
+      height: 100px;
+      width: 100px;
+      background-color: #EEE3CB;
+    }
+
+    .black{
+      height: 100px;
+      width: 100px;
+      background-color: #967E76;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+  </div>
+</body>
+
+</html>
+

@@ -1,0 +1,108 @@
+<!-- Grid Size -->
+<!-- 
+  1px: 1/96th inch
+  1pt: 1/72nd inch
+  1em: 100% parent
+  1rem: 100% of root
+
+  - If size is specified in grid-template-rows or grid-template-columns, 
+  it is unresponsive to width or height changes!
+ -->
+
+ <!-- Simplify grid-template-rows and grid-template-columns 
+  grid-template: 100px 200px / 400px 800px; (Rows / Columns)
+-->
+<!-- container {
+  display: grid;
+  grid-template-columns: 200px auto; (auto fills whatever is left of width to 100% but is also responsive)
+  grid-template-rows: 100px auto; (Fits content)
+  gap: 10px; 
+} 
+-->
+
+<!-- Minmax
+  .grid-container{
+    display: grid;
+    grid-template-rows: 200px 400px;
+    grid-template-columns: 200px minmax(400px, 800px) (lowest 400px, highest 800px)
+  }
+ -->
+
+ <!-- 
+  .grid-container{
+    display: grid;
+    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: repeat(2,100px); (# of times, size)
+    grid-auto-rows: 300px; (If there are extra divs not specified in rows or columns, this styles them into your grid)
+  -->
+
+
+<!-- 
+  Fixed Size: Not responsive
+  Auto Size: Responsive
+  Fractional Size: responsive (fr defines ratio sizes. Adjusts things to maintain sizing.)  
+  Minmax Size: Sets responsive limit on columns within a grid. 
+  Repeat: Repeats (# of times, size)
+  Test:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Fundamentals</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    .item {
+      width: 200px;
+      margin: 20px;
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      line-height: 2;
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Grid Sizing</h1>
+    <a class="item" href="./fixed-size.html">Fixed Size</a>
+    <a class="item" href="./auto-size.html">Auto Size</a>
+    <a class="item" href="./fractional-size.html">Fractional Size</a>
+    <a class="item" href="./minmax-size.html">MinMax Size</a>
+    <a class="item" href="./repeat.html">Repeat</a>
+    <a class="item" href="./test.html">Test</a>
+
+
+  </div>
+</body>
+
+</html>
+
+<!-- /* Write your CSS code below to make the purple items size, grow and shrink like the green ones.*/ -->
+
+<!-- TEST SOLUTION -->
+<!-- .grid-container {
+
+ display: grid;
+ grid-template-rows: 1fr 1fr 2fr;
+ grid-template-columns: auto 400px minmax(200px, 500px);
+ grid-auto-rows: 50px;
+} -->
