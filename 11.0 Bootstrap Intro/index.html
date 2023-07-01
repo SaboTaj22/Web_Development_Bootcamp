@@ -1,0 +1,93 @@
+<!-- Bootstrap -->
+<!-- 
+  - Pre-made classes that can be utilized to style your projects (Saves a lot of time!)
+  - Open source github! getbootstrap.com
+  - Quick mobile first website
+  - Custom websites are better made without it!
+
+
+<ul class="nav nav-pills">
+  <li>
+    <button class="nav-link active rounded-5"
+    >Home</button>>
+  </li>
+</ul>
+ -->
+
+ <!-- Sizes in bootstrap (We know which one to use based on chrome dev tool: chrome dev tool, toggle device toolbar, change dimensions in top middle section to responsive)
+  sm (mobile)
+  md (ipad)
+  lg (laptop)
+  xl (desktop)
+  xxl (TV)
+
+<576px	xs
+≥576px	s
+≥768px	m
+≥992px	l
+≥1200px	xl
+≥1400px xxl
+
+
+  -SIZE is out of 12
+
+  EX: col-sm-12 col-md-8 col-lg-4 (On small device it takes up 12/12 width on the screen, mid 8/12, lg 4/12)
+  -->
+
+  <!-- https://appbrewery.github.io/bootstrap-layout/
+  <div class="row">
+    <div class="col-xl-6 col-sm-12">50% desktop, 100% mobile</div>
+    <div class="col-xl-6 col-sm-12">50% desktop, 100% mobile</div>
+  </div>
+
+   Modify the HTML below to make the blue boxes behave like the red ones.
+   <div class="row">
+    <div class="col-lg-6 col-sm-12 col-10">Column 1</div>
+    <div class="col-lg-3 col-sm-6 col-10">Column 2</div>
+    <div class="col-lg-3 col-sm-6 col-10">Column 3</div>
+  </div>
+
+  Modify the HTML below to make the indigo boxes behave like the blue ones. 
+  <div class="row">
+    <div class="col-xxl-1 col-xl-2 col-lg-4 col-md-6">Column 1</div>
+    <div class="col-xxl-11 col-xl-10 col-lg-8 col-md-6">Column 2</div>
+  </div>
+   -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+  <!-- TODO 1: Add the Bootstrap link here. (getbootstrap.com at the bottom)-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <style>
+    /* TODO 4: Use flexbox to center the card in the vertical and horizontal center. */
+  .flex-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <!-- TODO 2: Add the Bootstrap Prebuilt Card here (Go to components, Card) -->
+    <div class="card" style="width: 18rem;">
+      <img src="flower.jpg" class="card-img-top" alt="sunflower image">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <!-- TODO 3: Change the image src to display the flower.jpg image. -->
+  </div>
+</body>
+
+</html>
+
