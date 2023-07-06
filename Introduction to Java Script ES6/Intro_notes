@@ -1,0 +1,148 @@
+// ***Adding Website Behaviors***
+
+// alert("Hello"); //Creates a hello alert. To add another word to next line, hold "shift" then hit "return"
+// alert("World"); 
+// Format: function("message"); 
+
+// ***Data Types***
+// 2+3
+// 5
+
+// alert(2+3);
+// undefined (puts 5 up in browser)
+
+// typeof("Angela");
+// 'string'
+
+// typeof(true);
+// 'boolean'
+
+// ***Javascript Variables***
+// var myName = prompt("What is your name?"); (key word, name = value)
+// In console: myName + Enter = Taj (Named saved inside variable)
+
+// var myName = "Angela";
+// var yourName = prompt("What is your name?");
+// alert("My name is " + myName + ", What's your name?" + "My name is " + yourName);
+
+// var gameLevel = 1;
+// gameLevel = 2;
+// gameLevel = 3;
+// alert("Your level is currently: " + gameLevel);
+
+// ***Javascript Variables Exercise***
+// Given the existing code below, can you write some code so that their values are switched around?
+
+// var a = "3";
+// var b = "8";
+// So that the variable a holds the value "8".
+
+// And the variable b holds the value "3".
+
+// When the code is run, it should output:
+
+// a is 8
+
+// b is 3
+
+// Do NOT change any of the existing code.
+
+// You are NOT allowed to type any numbers.
+
+// You should NOT redeclare the variables a and b.
+
+// Hint: Use this code playground to run your code and see if it matches your expectations.
+
+// Hint: The solution is just 3 lines of code.
+
+// function test() {
+//     var a = "3";
+//     var b = "8";
+    
+// /***********Do not change the code above 👆*******/
+// //Write your code on lines 7 - 9:
+// [a, b] = [b, a]; 
+
+// Other solution: 
+// var c = a
+// a = b
+// b = c
+
+// /***********Do not change the code below 👇*******/
+
+//     console.log("a is " + a);
+//     console.log("b is " + b);
+// }
+
+
+// ***Naming and Naming Conventions for Javascript Variables***
+
+// Command to clear console: command + k (Doesn't clear information stored!)
+// Clear console data: click and hold refresh button + Empty Cache and Hard Reload 
+
+// var can't begin with number, contain spaces, or be var itself. 
+// var can be any letter a-z, any number, $, or _ 
+// Use camel casing EX: var userScoreFinal = 12
+
+
+// ***String Concatenation***
+// alert("hello" + "" + "world");
+
+// var message = "Hello";
+// var name = "Angela";
+
+// alert(message + " there, " + name);
+
+// ***String Lengths and Retrieving the Number of Characters***
+// Length: word.length (Use .length property)
+// For multi-line comments use /* */
+
+// Characters left exercise
+// var tweet = prompt("Compose your tweet:")
+// alert("You have written " + tweet.length + " characters, you have " + (140 - tweet.length) + " characters remaining.");
+
+// ***Slicing and Extracting Parts of a String***
+// var name = "Angela";
+// name.slice(0,1); (First letter in name)
+// name.slice(5,6); (Last letter in name)
+// name.slice(0,3); (Gives Ang from name)
+
+// Set tweet character limit to 140
+// var tweet = prompt("Compose your tweet:")
+// var tweet_limit = tweet.slice(0,140)
+// alert(tweetUnder140); 
+
+// ***Challenge: Changing Casing in Text***
+// word.toUpperCase()
+// var name = "Angela"
+// name = name.toUpperCase(); (Changes whole name to upper case!)
+// name = name.toLowerCase(); (Changes whole name to lower case!)
+
+
+// 1. Create a var that stores the name that user enters via prompt.
+// 2. Capitalise the first letter of their name. 
+// 3. We use the captialised version of their name to greet them using an alert. 
+
+// var name = prompt("What is your name?"); 
+
+// var firstChar = name.slice(0,1); (Isolate the first character.)
+// var upperCaseFirstChar = firstChar.toUpperCase(); (Turn the first char to upper case.)
+// var restOfName = name.slice(1,name.length); (Isolate the rest of the name)
+// restOfName = restOfName.toLowerCase(); (Change the rest of the name to lower case.)
+// var capitalisedName = upperCaseFirstChar + restOfName; (Concatenate the first char with the rest of the char)
+
+//  alert("Hello, " + capitalisedName);
+
+// ***Basic Arithmetic and the Modulo Operator in Javascript***
+// var dogAge = prompt("What is the name of your dog?");
+// humanAge =((dogAge - 2) * 4) + 21;
+// alert("Your dog is " + humanAge + " years old in human years.");
+
+// ***Increment and Decrement Expressions***
+// X++ == x+1 
+// X-- == x-1
+// x += 2 == x = x + 2 
+// x += y == x = x + y (Also works with +=, -=, /=, *=)
+
+
+
