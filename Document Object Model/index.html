@@ -1,0 +1,67 @@
+<!-- Adding inline js "onload" (Not good practice)-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="alert('Hello');"> 
+    <h1>Hello</h1>
+</body>
+</html> -->
+
+<!-- Internal  -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hello</h1>
+<script type="text/javascript">
+
+alert("Hello");
+
+</script>
+
+</body>
+</html> -->
+
+<!-- External -->
+<!-- Always put link to css after title so it can be applied before everthing else -->
+<!-- Js goes after title in body otherwise it won't know what to apply it to-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hello</h1>
+    <input type="checkbox">
+
+    <button style=":active: color:red;">Click Me</button>
+
+    <ul>
+        <li class="list">
+            <a href="https://www.google.com">Google</a>
+        </li>
+        <li class="list">Second</li>
+        <li class="list">Third</li>
+    </ul>
+
+<script src="index.js" charset="UTF-8"></script> 
+
+</body>
+
+<!-- 
+    Properties: What describes the object
+    Methods: Things the object can do
+-->
